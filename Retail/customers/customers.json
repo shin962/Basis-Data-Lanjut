@@ -1,0 +1,23 @@
+[
+    {
+        "id_pelanggan": "P001",
+        "nama_pelanggan": "Shin",
+        "alamat": "Canggu",
+        "no_tlp": "087798951475",
+        "pekerjaan": "Data Analyst"
+    },
+    {
+        "id_pelanggan": "P002",
+        "nama_pelanggan": "Asa Wijaya",
+        "alamat": "Ubung",
+        "no_tlp": "087839254732",
+        "pekerjaan": "Designer"
+    },
+    {
+        "id_pelanggan": "P003",
+        "nama_pelanggan": "Ngurah Nguyen",
+        "alamat": "Ayani",
+        "no_tlp": "087382019562",
+        "pekerjaan": "Programmer"
+    }
+]
