@@ -1,23 +1,37 @@
 [
     {
         "id_pelanggan": "P001",
-        "nama_pelanggan": "Shin",
-        "alamat": "Canggu",
+        "nama_pelanggan": "Kadek William Darmawan",
+        "alamat": "Badung",
         "no_tlp": "087798951475",
         "pekerjaan": "Data Analyst"
     },
     {
         "id_pelanggan": "P002",
-        "nama_pelanggan": "Asa Wijaya",
+        "nama_pelanggan": "Kadek Sri Dwi Wijayanti",
         "alamat": "Ubung",
-        "no_tlp": "087839254732",
-        "pekerjaan": "Designer"
+        "no_tlp": "08736451728453",
+        "pekerjaan": "Web Developer"
     },
     {
         "id_pelanggan": "P003",
-        "nama_pelanggan": "Ngurah Nguyen",
+        "nama_pelanggan": "Ngurah Bagus Putra Arthawan",
         "alamat": "Ayani",
-        "no_tlp": "087382019562",
-        "pekerjaan": "Programmer"
+        "no_tlp": "084637482934",
+        "pekerjaan": "App Programmer"
+    },
+    {
+        "id_pelanggan": "P004",
+        "nama_pelanggan": "I Made Adhitya Dwipayana",
+        "alamat": "Bangli",
+        "no_tlp": "082546372836",
+        "pekerjaan": "Designer"
+    },
+    {
+        "id_pelanggan": "P005",
+        "nama_pelanggan": "Komang Bagus Anjas Putra",
+        "alamat": "Ida Bagus Mantra",
+        "no_tlp": "083946274853",
+        "pekerjaan": "Game Developer"
     }
 ]
