@@ -31,7 +31,7 @@
                 </thead>
                 <tbody class="bg-light">
                     <?php
-                    foreach ($data_pelanggan as $pelanggan) { ?>
+                    foreach ($data_pelanggan as $key=>$pelanggan) { ?>
                         <tr>
                             <td><?php echo $pelanggan->id_pelanggan ?></td>
                             <td><?php echo $pelanggan->nama_pelanggan ?></td>
@@ -39,7 +39,7 @@
                             <td><?php echo $pelanggan->no_tlp ?></td>
                             <td><?php echo $pelanggan->pekerjaan ?></td>
                             <td>
-                                <a href="<?php echo "edit.php?id_pelanggan=".$pelanggan->id_pelanggan; ?>"><button class="btn btn-dark">Edit</button></a>
+                                <a href="edit.php?key=<?php echo $key; ?>"><button class="btn btn-dark">Edit</button></a>
                             </td>
                         </tr>
             <?php } ?>

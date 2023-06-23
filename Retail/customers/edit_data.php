@@ -1,29 +1,24 @@
 <?php
+$id = $_POST['id'];
+$nama = $_POST['nama'];
+$alamat = $_POST['alamat'];
+$nohp = $_POST['nohp'];
+$pekerjaan = $_POST['pekerjaan'];
 
 $file = file_get_contents('customers.json');
 $data_pelanggan = json_decode($file);
 
-$data_pelanggan[] = array(
-    "id_pelanggan"=> $_GET['id'],
-    "nama_pelanggan"=> $_GET['nama'],
-    "alamat"=> $_GET['alamat'],
-    "no_tlp"=> $_GET['nohp'],
-    "pekerjaan"=> $_GET['pekerjaan'],
-);
+foreach ($data_pelanggan as $key => $value) {
+    if($value->id_pelanggan == $id) {
+        $data_pelanggan[$key]->nama_pelanggan = $nama;
+        $data_pelanggan[$key]->alamat = $alamat;
+        $data_pelanggan[$key]->no_tlp = $nohp;
+        $data_pelanggan[$key]->pekerjaan = $pekerjaan;
+    }
+}
 
 $json_pelanggan_update = json_encode($data_pelanggan, JSON_PRETTY_PRINT);
 file_put_contents('customers.json', $json_pelanggan_update);
+header("Location: view.php");
+
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Data Edited</h1>
-    <a href="view.php"><button>Back</button></a>
-</body>
-</html>
