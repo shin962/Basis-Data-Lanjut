@@ -28,9 +28,4 @@ $data_pelanggan [] = array(
 $json_pelanggan = json_encode($data_pelanggan, JSON_PRETTY_PRINT);
 file_put_contents('customers.json', $json_pelanggan);
 
-
-
-
-
-
 ?>

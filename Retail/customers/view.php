@@ -40,6 +40,7 @@
                             <td><?php echo $pelanggan->pekerjaan ?></td>
                             <td>
                                 <a href="edit.php?key=<?php echo $key; ?>"><button class="btn btn-dark">Edit</button></a>
+                                <a href="delete.php?key=<?php echo $key; ?>"><button class="btn btn-danger">Delete</button></a>
                             </td>
                         </tr>
             <?php } ?>
